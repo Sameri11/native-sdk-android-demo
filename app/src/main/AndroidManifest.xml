@@ -15,6 +15,7 @@
         android:roundIcon="@mipmap/icon_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".TrafficScoreActivity"></activity>
         <activity
             android:name=".SplashActivity"
             android:theme="@style/SplashTheme">
@@ -34,8 +35,7 @@
             android:theme="@style/GenericActivityTheme" />
         <activity
             android:name=".MapStyleActivity"
-            android:theme="@style/MapStyleActivityTheme"
-            />
+            android:theme="@style/MapStyleActivityTheme" />
     </application>
 
 </manifest>

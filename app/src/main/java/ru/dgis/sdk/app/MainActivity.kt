@@ -40,6 +40,10 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this@MainActivity, MapStyleActivity::class.java)
             startActivity(intent)
         },
+        Page("Traffic Score") {
+            val intent = Intent(this@MainActivity, TrafficScoreActivity::class.java)
+            startActivity(intent)
+        },
     )
 
     override fun onCreate(savedInstanceState: Bundle?) {
