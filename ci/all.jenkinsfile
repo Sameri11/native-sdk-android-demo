@@ -176,6 +176,11 @@ pipeline {
         }
 
         stage('Deploy') {
+            when {
+                not {
+                    changeRequest()
+                }
+            }
             steps {
                 archiveArtifacts(artifacts: 'build/app/outputs/apk/debug/app-debug.apk')
                 archiveArtifacts(artifacts: 'build/app/outputs/bundle/debug/app-debug.aab')
